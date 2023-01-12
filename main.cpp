@@ -20,8 +20,8 @@ int main()
          << "\n";
 
     // Create a folder to store the output
-    ifstream file("out");
-    if (!file)
+    ifstream folder("out");
+    if (!folder)
     {
         system("mkdir out");
         cout << "Created ./out folder"
