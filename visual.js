@@ -60,10 +60,12 @@ async function init() {
         color: 0xffffff,
         size: .2,
         // load the texture
-        // map: THREE.ImageUtils.loadTexture("disc.png"),
+        map: THREE.ImageUtils.loadTexture("circle.png"),
         blending: THREE.AdditiveBlending,
         emissive: 0xffffff,
         transparent: true,
+        sizeAttenuation: true,
+        alphaTest: 0.5,
     });
     let particle_system = new THREE.Points(particle_geometry, particle_material);
 

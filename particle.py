@@ -107,7 +107,12 @@ with open("config.ini") as f:
     r_max = float(lines[2].split("=")[1].split("#")[0])
     N = int(lines[3].split("=")[1].split("#")[0])
 
-    collision = bool(lines[4].split("=")[1].split("#")[0])
+    collision = lines[4].split("=")[1].split("#")[0]
+    if collision.lower() == "true":
+        collision = True
+    else:
+        collision = False
+
     if collision:
         separation = float(lines[5].split("=")[1].split("#")[0])
         rel_vel = float(lines[6].split("=")[1].split("#")[0])
