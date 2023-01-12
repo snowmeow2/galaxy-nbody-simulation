@@ -47,7 +47,7 @@ Parameters in `config.ini` are used to generate the initial positions and veloci
 - `collision`: whether to generate an additional galaxy for collision
 - `separation`: the separation between the two galaxies [kpc]
 - `rel_vel`: the relative velocity between the two galaxies [km/s]
-- 
+
 ### `parameter.h`
 Parameters in `parameter.h` are used to configure the simulation. The parameters are:
 - `Mass`: the mass of each particle [$M_\odot$]
