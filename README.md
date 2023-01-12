@@ -17,14 +17,16 @@ The main simulation is written in C++ and the visualisation is done using three.
     cd galaxy-nbody-simulation
     make
     ```
-3. Prepare the initial conditions (This will generate a file called `halo.txt`)
+3. Prepare the initial conditions
     ```
     python3 particle.py
     ``` 
+    This will generate a file called `halo.txt`.
 4. Run the simulation
     ```
     ./simuation
     ```
+    A directory called `out` will be created and the simulation output `halo_NUM.txt` will be saved in it.
 5. Visualise the simulation (optional)
    
    First set up a local server on the repository directory:
@@ -58,4 +60,4 @@ Parameters in `parameter.h` are used to configure the simulation. The parameters
 Parameters in `visual.js` are used to configure the animation. The parameters are:
 - `particles_pos_file_prefix`: the prefix of the files containing the simulation data. The files should be named as `particles_pos_file_prefix + frame_number + ".txt"`.
 - `frames`: the number of frames, 1 for a static image
-- `rate`: the `frame_number` of files that displayed, roughly the frame rate of the animation
+- `rate`: the `frame_number` of files (it reads `halo_NUM.txt` as index) that displayed, roughly the frame rate of the animation
