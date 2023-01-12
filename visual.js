@@ -15,9 +15,12 @@ new OrbitControls(camera, renderer.domElement);
 let clock = new THREE.Clock(true);
 let scene = new THREE.Scene();
 
-
-const particles_pos_file_prefix = "out/halo_";
-const frames = 50;
+//############################################
+// CHANGE THESE PARAMETERS TO YOUR NEEDS
+const particles_pos_file_prefix = "out/halo_"; // prefix of the files
+const frames = 50; // number of frames, 1 for a static image
+const rate = 100; // speed of the animation
+//############################################
 
 
 async function loadPosition(prefix, frames) {
@@ -25,7 +28,7 @@ async function loadPosition(prefix, frames) {
 
     // loop the files
     for (let i = 0; i < frames; i++) {
-        let file_name = prefix + i * 100 + ".txt";
+        let file_name = prefix + i * rate + ".txt";
         let particles_pos = [];
 
         // load the file
