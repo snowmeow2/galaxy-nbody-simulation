@@ -1,4 +1,4 @@
-# Galaxy Nbody Simulation
+# Galaxy N-body Simulation
 Simulate and visualise the collision of galaxies which includes N-body gravitational force, using the Barnes-Hut algorithm. 
 
 This is the product of final project for the course "Computational Astrophysics", ASTR660 in NTHU.
