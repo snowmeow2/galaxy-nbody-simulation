@@ -1,5 +1,5 @@
 # Galaxy N-body Simulation
-Simulate and visualise the collision of galaxies which includes N-body gravitational force, using the Barnes-Hut algorithm. 
+Simulate and visualise the collision of galaxies which includes N-body gravitational force, using the Barnes-Hut algorithm. It models a spherical galaxy with a Hernquist profile.
 
 This is the product of final project for the course "Computational Astrophysics", ASTR660 in NTHU.
 The main simulation is written in C++ and the visualisation is done using three.js. 
@@ -61,3 +61,10 @@ Parameters in `visual.js` are used to configure the animation. The parameters ar
 - `particles_pos_file_prefix`: the prefix of the files containing the simulation data. The files should be named as `particles_pos_file_prefix + frame_number + ".txt"`.
 - `frames`: the number of frames, 1 for a static image
 - `rate`: the `frame_number` of files (it reads `halo_NUM.txt` as index) that displayed, roughly the frame rate of the animation
+
+## Acknowledgement
+This work used high-performance computing facilities operated by the
+Center for Informatics and Computation in Astronomy (CICA) at National
+Tsing Hua University. This equipment was funded by the Ministry of
+Education of Taiwan, the Ministry of Science and Technology of Taiwan,
+and National Tsing Hua University.
